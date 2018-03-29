@@ -8,7 +8,7 @@ These instructions will get you a copy of the module up and running and that wil
 
 ### Prerequisites
 
-Things you need to install before using this module
+Things you need to install before using the module
 
 ```
 node: ">=4.2.4"

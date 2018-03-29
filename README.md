@@ -4,20 +4,16 @@ Generate private key and its associated ethereum address
 
 ## Getting Started
 
-These instructions will get you a copy of the module up and running and that will help you to create private key, generate ethereum address with given private key, recover private key with public key and password and to validate a ethereum address
+These instructions will get you a copy of the module up and running in your application so clients can create their own private keys and ethereum compliance addresses
 
 ### Prerequisites
-
-Things you need to install before using the module
 
 ```
 node: ">=4.2.4"
 npm
 ```
 
-### Installing
-
-To install this module run the given cammand
+### Installation
 
 ```
 npm install node-eth-address --save
@@ -31,8 +27,9 @@ npm install node-eth-address --save
 var nodeEth = require('node-eth-address');
 
 /** 
-	put your own strong password and don't forget it 
-	otherwise you can not recover your address or private key
+This password encrypts your private key. This does not act as a seed 
+to generate your keys. You will need this password + your private key
+to unlock your wallet
 */
 var password = 'test@123'; 
 var address = nodeEth.getDefaultAddress(password);
@@ -44,7 +41,7 @@ var address = nodeEth.getDefaultAddress(password);
 	/* Your private key */
 	privateKey: '0x6371262b577bfb2b36b82e493dd89b00bae550539a890feefdb6c2012d0e89fc',
 
-	/* Your JSON Keystore- make a copy on your local computer */
+	/* Your JSON Keystore - make a Json file and store on your local computer */
 	keyStore: { 
 		address:"0xc4d5895cdEd9477018Bcc53F524F8B17e2C3C884",
 		crypto: {

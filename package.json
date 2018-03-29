@@ -1,6 +1,6 @@
 {
   "name": "node-eth-address",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Node module for ethereum wallet address creation and validation",
   "main": "index.js",
   "scripts": {

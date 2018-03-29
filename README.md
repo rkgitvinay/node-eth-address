@@ -4,7 +4,7 @@ Generate private key and its associated ethereum address
 
 ## Getting Started
 
-These instructions will get you a copy of the module up and running in your application so clients can create their own private keys and ethereum compliance addresses
+These instructions will provide you a copy of the module and run in your application so that the clients can create their own private keys and ethereum compliance addresses.
 
 ### Prerequisites
 
